@@ -1,3 +1,15 @@
 <Solution>
-  <Project Path="TicketSystem.Api/TicketSystem.Api.csproj" />
+  <Folder Name="/ApplicationCoreLayer/">
+    <Project Path="TicketSystem.Abstraction/TicketSystem.Abstraction.csproj" Id="7c2ba047-0e22-4b80-b0d0-9c22f2c19b64" />
+    <Project Path="TicketSystem.Domain/TicketSystem.Domain.csproj" Id="a227dc73-ba34-4c57-98d2-7da3fc382231" />
+    <Project Path="TicketSystem.Services/TicketSystem.Services.csproj" Id="3a1efc3d-2cdc-4996-b55e-0bc69df4243f" />
+  </Folder>
+  <Folder Name="/InfrastructureLayer/">
+    <Project Path="TicketSystem.Presistence/TicketSystem.Presistence.csproj" Id="ed72d26d-3208-4ae9-9f41-ef50d26927af" />
+  </Folder>
+  <Folder Name="/PresentationLayer/">
+    <Project Path="TicketSystem.Api/TicketSystem.Api.csproj" DisplayName="TicketSystem.API" />
+    <Project Path="TicketSystem.Presentation/TicketSystem.Presentation.csproj" Id="914369a2-b38d-4d3f-a876-74816efdb14d" />
+  </Folder>
+  <Project Path="TicketSystem.Shared/TicketSystem.Shared.csproj" Id="06f0fc0e-f5da-41ae-8497-9e7136811f80" />
 </Solution>
