@@ -17,3 +17,4 @@ namespace TicketSystem.Domain.Common
         public int TotalCount { get; set; }
     }
 }
+

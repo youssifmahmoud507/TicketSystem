@@ -1,7 +1,9 @@
+using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using System.Reflection.Metadata;
-using Microsoft.EntityFrameworkCore;
+using TicketSystem.Domain.IRepositories;
 using TicketSystem.Presistence.DbContext;
+using TicketSystem.Presistence.Repositories;
 
 namespace TicketSystem.API
 {
@@ -18,6 +20,9 @@ namespace TicketSystem.API
                     sqlOptions => sqlOptions.MigrationsAssembly("TicketSystem.Presistence")
                 )
             );
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             #region Add services to the container.
             builder.Services.AddControllers();
