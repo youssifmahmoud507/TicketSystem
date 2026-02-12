@@ -1,5 +1,5 @@
 
-namespace TicketSystem.Api
+namespace TicketSystem.API
 {
     public class Program
     {
@@ -29,7 +29,7 @@ namespace TicketSystem.Api
             app.UseAuthorization();
 
 
-            app.MapControllers(); 
+            app.MapControllers();
 
             #endregion
 

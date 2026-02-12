@@ -8,7 +8,7 @@
     <Project Path="TicketSystem.Presistence/TicketSystem.Presistence.csproj" Id="ed72d26d-3208-4ae9-9f41-ef50d26927af" />
   </Folder>
   <Folder Name="/PresentationLayer/">
-    <Project Path="TicketSystem.Api/TicketSystem.Api.csproj" DisplayName="TicketSystem.API" />
+    <Project Path="TicketSystem.Api/TicketSystem.Api.csproj" DisplayName="TicketSystem.API" Id="d7807359-d5a3-4d94-9984-22bb118d98c9" />
     <Project Path="TicketSystem.Presentation/TicketSystem.Presentation.csproj" Id="914369a2-b38d-4d3f-a876-74816efdb14d" />
   </Folder>
   <Project Path="TicketSystem.Shared/TicketSystem.Shared.csproj" Id="06f0fc0e-f5da-41ae-8497-9e7136811f80" />
