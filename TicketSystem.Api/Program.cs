@@ -4,6 +4,7 @@ using System.Reflection.Metadata;
 using TicketSystem.Domain.IRepositories;
 using TicketSystem.Presistence.DbContext;
 using TicketSystem.Presistence.Repositories;
+using TicketSystem.Services;
 
 namespace TicketSystem.API
 {
@@ -21,8 +22,12 @@ namespace TicketSystem.API
                 )
             );
 
+            // Add UnitOfWork pattern
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
+            // Add Services
+            builder.Services.AddScoped<TicketService>();
 
             #region Add services to the container.
             builder.Services.AddControllers();
@@ -54,4 +59,3 @@ namespace TicketSystem.API
         }
     }
 }
-    
