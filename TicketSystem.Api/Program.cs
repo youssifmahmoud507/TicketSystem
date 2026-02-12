@@ -7,8 +7,7 @@ namespace TicketSystem.Api
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
+            #region Add services to the container.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -16,7 +15,9 @@ namespace TicketSystem.Api
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            #endregion
+
+            #region Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -28,7 +29,8 @@ namespace TicketSystem.Api
             app.UseAuthorization();
 
 
-            app.MapControllers();
+            app.MapControllers(); 
+            #endregion
 
             app.Run();
         }
