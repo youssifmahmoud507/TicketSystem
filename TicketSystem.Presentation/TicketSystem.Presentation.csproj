@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TicketSystem.Abstraction\TicketSystem.Abstraction.csproj" />
+    <ProjectReference Include="..\TicketSystem.Services\TicketSystem.Services.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+	</ItemGroup>
 
 </Project>

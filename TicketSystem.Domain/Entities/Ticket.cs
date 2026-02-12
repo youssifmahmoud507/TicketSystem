@@ -3,31 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketSystem.Domain.Enums;
 
 namespace TicketSystem.Domain.Entities
 {
     public class Ticket
     {
-        public string TicketId { get; set; }
-        public int DoctorID { get; set; }
+        public Guid Id { get; set; }
 
-        public string SubjectId { get; set; }
+        public Guid StudentId { get; set; }
+        public ApplicationUser Student { get; set; }
 
-        public int LevelID { get; set; }
-       public  string Title { get; set; }
+        public Guid DoctorId { get; set; }
+        public ApplicationUser Doctor { get; set; }
+
+        public Guid SubjectId { get; set; }
+        public Subject Subject { get; set; }
+
+        public int LevelId { get; set; }
+        public Level Level { get; set; }
+
+        public string Title { get; set; }
 
         public string Description { get; set; }
 
         public string Group { get; set; }
 
-        public  TicketStatus Status { get; set; }
+        public TicketStatus Status { get; set; } = TicketStatus.New;
 
-        public DateTime CreatedAt { get; set; }
-
-
-
-
-
-
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
