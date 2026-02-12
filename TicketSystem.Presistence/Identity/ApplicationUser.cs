@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace TicketSystem.Presistence.Identity
 {
-    public class ApplicationUser
-    {
-        public string FullName { get; set; }    
+    using Microsoft.AspNetCore.Identity;
 
+    public class ApplicationUser : IdentityUser<Guid>
+    {
+        public string FullName { get; set; }
     }
+
 }

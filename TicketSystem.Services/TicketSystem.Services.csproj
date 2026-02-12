@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.24" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TicketSystem.Abstraction\TicketSystem.Abstraction.csproj" />
     <ProjectReference Include="..\TicketSystem.Domain\TicketSystem.Domain.csproj" />
   </ItemGroup>
