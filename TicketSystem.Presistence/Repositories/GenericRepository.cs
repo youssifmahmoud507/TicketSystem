@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketSystem.Domain.Common;
+using TicketSystem.Domain.IRepositories;
 using TicketSystem.Presistence.DbContext;
 using TicketSystem.Presistence.Intrfaces;
 
